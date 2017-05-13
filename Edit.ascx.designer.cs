@@ -31,24 +31,6 @@ namespace Eraware.Modules.Html5Video {
         protected global::DotNetNuke.Web.UI.WebControls.DnnFilePickerUploader ctlMp4Video;
         
         /// <summary>
-        /// lblWebmVideo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DotNetNuke.UI.UserControls.LabelControl lblWebmVideo;
-        
-        /// <summary>
-        /// ctlWebmVideo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DotNetNuke.Web.UI.WebControls.DnnFilePickerUploader ctlWebmVideo;
-        
-        /// <summary>
         /// lblImage control.
         /// </summary>
         /// <remarks>

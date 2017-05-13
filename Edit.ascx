@@ -12,12 +12,6 @@
     </fieldset>
     <fieldset>
         <div class="dnnFormItem">
-            <dnn:Label id="lblWebmVideo" runat="server" Suffix=":" ControlName="ctlWebmVideo" />
-            <div class="dnnLeft"><dnn:FilePickerUploader id="ctlWebmVideo" runat="server" /></div>
-        </div>
-    </fieldset>
-    <fieldset>
-        <div class="dnnFormItem">
             <dnn:Label id="lblImage" runat="server" Suffix=":" ControlName="ctlImage" />
             <div class="dnnLeft"><dnn:FilePickerUploader id="ctlImage" runat="server" /></div>
         </div>

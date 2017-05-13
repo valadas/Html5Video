@@ -47,9 +47,6 @@ namespace Eraware.Modules.Html5Video
                     // Mp4 url
                     if (Settings.Contains("MP4Video"))
                         ctlMp4Video.FilePath = Settings["MP4Video"].ToString();
-                    // WebM url
-                    if (Settings.Contains("WebmVideo"))
-                        ctlWebmVideo.FilePath = Settings["WebmVideo"].ToString();
                     // Image
                     if (Settings.Contains("Image"))
                         ctlImage.FilePath = Settings["Image"].ToString();
@@ -109,7 +106,6 @@ namespace Eraware.Modules.Html5Video
             {
                 ModuleController mc = new ModuleController();
                 mc.UpdateModuleSetting(ModuleId, "MP4Video", ctlMp4Video.FilePath);
-                mc.UpdateModuleSetting(ModuleId, "WebmVideo", ctlWebmVideo.FilePath);
                 mc.UpdateModuleSetting(ModuleId, "Image", ctlImage.FilePath);
                 mc.UpdateModuleSetting(ModuleId, "ReplaceWithImage", chkReplaceWithImage.Checked.ToString());
                 mc.UpdateModuleSetting(ModuleId, "Autoplay", chkAutoplay.Checked.ToString());

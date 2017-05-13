@@ -171,10 +171,4 @@
   <data name="lblResponsive.Text" xml:space="preserve">
     <value>Responsive</value>
   </data>
-  <data name="lblWebmVideo.Help" xml:space="preserve">
-    <value>If you need to support old browsers, you can specify a webm version of the video.</value>
-  </data>
-  <data name="lblWebmVideo.Text" xml:space="preserve">
-    <value>WebM Video</value>
-  </data>
 </root>
