@@ -46,6 +46,10 @@
       <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="DotNetNuke.Web, Version=7.4.2.216, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\DotNetNuke.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>

@@ -13,6 +13,9 @@
 
 using System;
 using DotNetNuke.Services.Exceptions;
+using DotNetNuke.Web.UI.WebControls;
+using DotNetNuke.Common;
+using DotNetNuke.Entities.Modules;
 
 namespace Eraware.Modules.Html5Video
 {
@@ -30,16 +33,97 @@ namespace Eraware.Modules.Html5Video
     /// -----------------------------------------------------------------------------
     public partial class Edit : Html5VideoModuleBase
     {
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            cancelHyperLink.NavigateUrl = Globals.NavigateURL();
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
-
+                if (!IsPostBack)
+                {
+                    // Mp4 url
+                    if (Settings.Contains("MP4Video"))
+                        ctlMp4Video.FilePath = Settings["MP4Video"].ToString();
+                    // WebM url
+                    if (Settings.Contains("WebmVideo"))
+                        ctlWebmVideo.FilePath = Settings["WebmVideo"].ToString();
+                    // Image
+                    if (Settings.Contains("Image"))
+                        ctlImage.FilePath = Settings["Image"].ToString();
+                    // Replace with image
+                    if (Settings.Contains("ReplaceWithImage"))
+                    {
+                        bool value = false;
+                        bool.TryParse(Settings["ReplaceWithImage"].ToString(), out value);
+                        chkReplaceWithImage.Checked = value;
+                    }
+                    // Autoplay
+                    if (Settings.Contains("Autoplay"))
+                    {
+                        bool value = false;
+                        bool.TryParse(Settings["Autoplay"].ToString(), out value);
+                        chkAutoplay.Checked = value;
+                    }
+                    // Loop
+                    if (Settings.Contains("Loop"))
+                    {
+                        bool value = false;
+                        bool.TryParse(Settings["Loop"].ToString(), out value);
+                        chkLoop.Checked = value;
+                    }
+                    // Muted
+                    if (Settings.Contains("Muted"))
+                    {
+                        bool value = false;
+                        bool.TryParse(Settings["Muted"].ToString(), out value);
+                        chkMuted.Checked = value;
+                    }
+                    // Controls
+                    if (Settings.Contains("Controls"))
+                    {
+                        bool value = false;
+                        bool.TryParse(Settings["Controls"].ToString(), out value);
+                        chkControls.Checked = value;
+                    }
+                    // Responsive
+                    if (Settings.Contains("Responsive"))
+                    {
+                        bool value = false;
+                        bool.TryParse(Settings["Responsive"].ToString(), out value);
+                        chkResponsive.Checked = value;
+                    }
+                }
             }
             catch (Exception exc) //Module failed to load
             {
                 Exceptions.ProcessModuleLoadException(this, exc);
             }
+        }
+
+        protected void cmdUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ModuleController mc = new ModuleController();
+                mc.UpdateModuleSetting(ModuleId, "MP4Video", ctlMp4Video.FilePath);
+                mc.UpdateModuleSetting(ModuleId, "WebmVideo", ctlWebmVideo.FilePath);
+                mc.UpdateModuleSetting(ModuleId, "Image", ctlImage.FilePath);
+                mc.UpdateModuleSetting(ModuleId, "ReplaceWithImage", chkReplaceWithImage.Checked.ToString());
+                mc.UpdateModuleSetting(ModuleId, "Autoplay", chkAutoplay.Checked.ToString());
+                mc.UpdateModuleSetting(ModuleId, "Loop", chkLoop.Checked.ToString());
+                mc.UpdateModuleSetting(ModuleId, "Muted", chkMuted.Checked.ToString());
+                mc.UpdateModuleSetting(ModuleId, "Controls", chkControls.Checked.ToString());
+                mc.UpdateModuleSetting(ModuleId, "Responsive", chkResponsive.Checked.ToString());
+                Response.Redirect(Globals.NavigateURL());
+            }
+            catch (Exception exc)
+            {
+                Exceptions.ProcessModuleLoadException(this, exc);
+            }
+            
         }
     }
 }

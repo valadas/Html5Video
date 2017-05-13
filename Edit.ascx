@@ -60,6 +60,6 @@
     </fieldset>
 </div>
 <ul class="dnnActions dnnClear">
-		<li><asp:LinkButton id="cmdUpdate" runat="server" CssClass="dnnPrimaryAction" ResourceKey="cmdUpdate" /></li>
+		<li><asp:LinkButton id="cmdUpdate" runat="server" CssClass="dnnPrimaryAction" ResourceKey="cmdUpdate" OnClick="cmdUpdate_Click" /></li>
 		<li><asp:Hyperlink id="cancelHyperLink" runat="server" CssClass="dnnSecondaryAction" resourcekey="cmdCancel" /></li>
 </ul>
