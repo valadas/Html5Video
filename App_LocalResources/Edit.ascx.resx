@@ -117,7 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cmdUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
   <data name="ControlTitle_edit.Text" xml:space="preserve">
-    <value>Edit Control for Html5Video</value>
+    <value>Edit Html5Video</value>
+  </data>
+  <data name="lblAutoplay.Help" xml:space="preserve">
+    <value>If checked, the video will start playing automaticcaly. This feature will not work with iPhone/iPad. For most android devices, you also need to enable "muted" for this option to work.</value>
+  </data>
+  <data name="lblAutoplay.Text" xml:space="preserve">
+    <value>Autoplay</value>
+  </data>
+  <data name="lblControls.Help" xml:space="preserve">
+    <value>If checked, default playback controls will be shown</value>
+  </data>
+  <data name="lblControls.Text" xml:space="preserve">
+    <value>Controls</value>
+  </data>
+  <data name="lblImage.Help" xml:space="preserve">
+    <value>This image can be either used as a poster image or as a replacement for the video on mobile devices.</value>
+  </data>
+  <data name="lblImage.Text" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="lblLoop.Help" xml:space="preserve">
+    <value>If checked, the video will automaticcaly restart when it ends.</value>
+  </data>
+  <data name="lblLoop.Text" xml:space="preserve">
+    <value>Loop</value>
+  </data>
+  <data name="lblMp4Video.Help" xml:space="preserve">
+    <value>MP4 file is the most supported, it will work with all modern browsers</value>
+  </data>
+  <data name="lblMp4Video.Text" xml:space="preserve">
+    <value>MP4 Video</value>
+  </data>
+  <data name="lblMuted.Help" xml:space="preserve">
+    <value>If cheked, the sound will be muted for the video</value>
+  </data>
+  <data name="lblMuted.Text" xml:space="preserve">
+    <value>Muted</value>
+  </data>
+  <data name="lblReplaceWithIamge.Help" xml:space="preserve">
+    <value>If checked the image will be used instead of the video, if not the image will be used as a poster image</value>
+  </data>
+  <data name="lblReplaceWithIamge.Text" xml:space="preserve">
+    <value>Replace with image on mobiles</value>
+  </data>
+  <data name="lblResponsive.Help" xml:space="preserve">
+    <value>If checked, the video will never be larger than it's container.</value>
+  </data>
+  <data name="lblResponsive.Text" xml:space="preserve">
+    <value>Responsive</value>
+  </data>
+  <data name="lblWebmVideo.Help" xml:space="preserve">
+    <value>If you need to support old browsers, you can specify a webm version of the video.</value>
+  </data>
+  <data name="lblWebmVideo.Text" xml:space="preserve">
+    <value>WebM Video</value>
   </data>
 </root>
