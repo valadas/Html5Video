@@ -1,0 +1,160 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>Edit.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Edit.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Edit.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Html5Video.csproj</name>
+    </file>
+    <file>
+      <path />
+      <name>Html5Video.sln</name>
+    </file>
+    <file>
+      <path />
+      <name>Html5VideoModuleBase.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Html5VideoModuleSettingsBase.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>License.txt</name>
+    </file>
+    <file>
+      <path />
+      <name>module.css</name>
+    </file>
+    <file>
+      <path />
+      <name>ReleaseNotes.txt</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Settings.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>View.ascx.designer.cs</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>Edit.ascx.resx</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>Settings.ascx.resx</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>View.ascx.resx</name>
+    </file>
+    <file>
+      <path>BuildScripts/</path>
+      <name>ModulePackage.targets</name>
+    </file>
+    <file>
+      <path>BuildScripts/</path>
+      <name>MSBuild.Community.Tasks.Targets</name>
+    </file>
+    <file>
+      <path>Components/</path>
+      <name>FeatureController.cs</name>
+    </file>
+    <file>
+      <path>Data/</path>
+      <name>DataProvider.cs</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.css</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.html</name>
+    </file>
+    <file>
+      <path>obj/Debug/</path>
+      <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+    </file>
+    <file>
+      <path>obj/Debug/</path>
+      <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+    </file>
+    <file>
+      <path>obj/Debug/</path>
+      <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+    </file>
+    <file>
+      <path>obj/Release/</path>
+      <name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+    </file>
+    <file>
+      <path>obj/Release/</path>
+      <name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+    </file>
+    <file>
+      <path>obj/Release/</path>
+      <name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+    </file>
+    <file>
+      <path>packages/MSBuildTasks.1.5.0.235/</path>
+      <name>MSBuildTasks.1.5.0.235.nupkg</name>
+    </file>
+    <file>
+      <path>packages/MSBuildTasks.1.5.0.235/build/</path>
+      <name>MSBuildTasks.targets</name>
+    </file>
+    <file>
+      <path>packages/MSBuildTasks.1.5.0.235/tools/</path>
+      <name>MSBuild.Community.Tasks.dll</name>
+    </file>
+    <file>
+      <path>packages/MSBuildTasks.1.5.0.235/tools/</path>
+      <name>MSBuild.Community.Tasks.Targets</name>
+    </file>
+    <file>
+      <path>packages/MSBuildTasks.1.5.0.235/tools/</path>
+      <name>MSBuild.Community.Tasks.xml</name>
+    </file>
+    <file>
+      <path>packages/MSBuildTasks.1.5.0.235/tools/</path>
+      <name>MSBuild.Community.Tasks.xsd</name>
+    </file>
+    <file>
+      <path>Properties/</path>
+      <name>AssemblyInfo.cs</name>
+    </file>
+    <file>
+      <path>Providers/DataProviders/SqlDataProvider/</path>
+      <name>SqlDataProvider.cs</name>
+    </file>
+  </files>
+</dotnetnuke>
