@@ -16,6 +16,7 @@ using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
 using DotNetNuke.Entities.Modules.Actions;
 using DotNetNuke.Services.Localization;
+using DotNetNuke.Common;
 
 namespace Eraware.Modules.Html5Video
 {
@@ -38,7 +39,31 @@ namespace Eraware.Modules.Html5Video
         {
             try
             {
+                if(Settings.Contains("MP4Video"))
+                {
+                    string html = @"<video";
+                    if(Settings.Contains("ReplaceWithImage"))
+                        html += @" class=""hidden-xs""";
+                    if (Settings.Contains("Autoplay") && Settings["Autoplay"].ToString() == "True")
+                        html += " autoplay";
+                    if (Settings.Contains("Loop") && Settings["Loop"].ToString() == "True")
+                        html += " loop";
+                    if (Settings.Contains("Controls") && Settings["Controls"].ToString() == "True")
+                        html += " controls";
+                    if (Settings.Contains("Muted") && Settings["Muted"].ToString() == "True")
+                        html += " muted";
+                    if (Settings.Contains("ReplaceWithImage") && Settings["ReplaceWithImage"].ToString()=="False" && Settings.Contains("Image"))
+                        html += @" poster=""" + PortalSettings.HomeDirectory + Settings["Image"].ToString() + @"""";
+                    if (Settings.Contains("Responsive") && Settings["Responsive"].ToString() == "True")
+                        html += @" style=""max-width:100%;height:auto;""";
+                    html += @""">";
+                    html += @"<source src=""" + PortalSettings.HomeDirectory + Settings["MP4Video"] + @""" type=""video/mp4"" />";
+                    html += "</video>";
 
+                    if (Settings.Contains("ReplaceWithImage") && Settings["ReplaceWithImage"].ToString() == "True")
+                        html += @"<img src=""" + PortalSettings.HomeDirectory + Settings["Image"].ToString() + @""" class=""visible-xs"" style=""max-width:100%;height:auto;display:block;margin:0 auto;"" />";
+                    litVideo.Text = html;
+                }
             }
             catch (Exception exc) //Module failed to load
             {
