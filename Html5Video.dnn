@@ -62,17 +62,7 @@
                     <helpUrl />
                     <viewOrder>0</viewOrder>
                     <supportsPopUps>True</supportsPopUps>
-                  </moduleControl>
-                  <moduleControl>
-                    <controlKey>Settings</controlKey>
-                    <controlSrc>DesktopModules/Eraware/Html5Video/Settings.ascx</controlSrc>
-                    <supportsPartialRendering>False</supportsPartialRendering>
-                    <controlTitle>Html5Video Settings</controlTitle>
-                    <controlType>Edit</controlType>
-                    <iconFile />
-                    <helpUrl />
-                    <viewOrder>0</viewOrder>
-                  </moduleControl>
+                  </moduleControl>                 
                 </moduleControls>
               </moduleDefinition>
             </moduleDefinitions>
