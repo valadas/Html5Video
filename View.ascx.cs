@@ -42,8 +42,16 @@ namespace Eraware.Modules.Html5Video
                 if(Settings.Contains("MP4Video"))
                 {
                     string html = @"<video";
-                    if(Settings.Contains("ReplaceWithImage"))
-                        html += @" class=""hidden-xs""";
+                    if (Settings.Contains("ReplaceWithImage"))
+                    {
+                        bool replaceWithImage = false;
+                        bool.TryParse(Settings["ReplaceWithImage"].ToString(), out replaceWithImage);
+                        if (replaceWithImage)
+                        {
+                            html += @" class=""hidden-xs""";
+                        }
+                    }
+                        
                     if (Settings.Contains("Autoplay") && Settings["Autoplay"].ToString() == "True")
                         html += " autoplay";
                     if (Settings.Contains("Loop") && Settings["Loop"].ToString() == "True")
