@@ -1,4 +1,1 @@
 remote_theme: valadas/jekyll-theme-dnn-community
-
-plugins:
-  - jekyll-remote-theme
